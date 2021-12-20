@@ -12,3 +12,12 @@ func TestIm(t *testing.T) {
 	c = Myint(b)
 	t.Log(b, c, a)
 }
+
+func TestPoint(t *testing.T) {
+	a := 1
+	aPtr := &a
+	// 指针不支持运算
+	//aPtr = aPtr+1
+	t.Log(a, aPtr)
+	t.Logf("%T,%T", a, aPtr)
+}
