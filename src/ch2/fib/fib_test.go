@@ -37,3 +37,9 @@ func TestExchange(t *testing.T) {
 	a, b = b, a
 	t.Log(a, b)
 }
+
+// 常量初始化
+const (
+	Readable = 1 << iota
+	lihaoyu
+)
