@@ -21,3 +21,10 @@ func TestPoint(t *testing.T) {
 	t.Log(a, aPtr)
 	t.Logf("%T,%T", a, aPtr)
 }
+
+// golang中默认字符串是nil
+func TestString(t *testing.T) {
+	var s string
+	t.Log("*" + s + "*")
+	t.Log(len(s))
+}
