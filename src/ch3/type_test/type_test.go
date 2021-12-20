@@ -22,7 +22,7 @@ func TestPoint(t *testing.T) {
 	t.Logf("%T,%T", a, aPtr)
 }
 
-// golang中默认字符串是nil
+// golang中默认字符串是空字符串
 func TestString(t *testing.T) {
 	var s string
 	t.Log("*" + s + "*")
